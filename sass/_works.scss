@@ -1,0 +1,35 @@
+.works{
+
+    .item{
+        &:not(:first-child){
+            @media screen and (max-width: 869px){
+                display: none;
+            }
+        }
+    }
+
+    .title{
+font-weight: 700;
+font-size: 24px;
+line-height: 30px;
+}
+
+.extra-text{
+    color: #8695A4;
+font-weight: 400;
+font-size: 16px;
+line-height: 100%;
+letter-spacing: 0px;
+}
+
+.date{
+    align-items: center;
+    margin-top: 16px;
+}
+
+.text{
+font-size: 16px;
+line-height: 100%;
+letter-spacing: 0px;
+}
+}
