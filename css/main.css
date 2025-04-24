@@ -13,7 +13,7 @@ ul, p, h1, h2, h3 {
   padding: 0;
 }
 
-ul {
+ul, a {
   text-decoration: none;
   list-style: none;
 }
@@ -24,7 +24,11 @@ ul {
   width: 375px;
   padding-left: 15px;
   padding-right: 15px;
-  outline: solid 2px red;
+}
+@media screen and (min-width: 870px) {
+  .container {
+    width: 870px;
+  }
 }
 
 section {
@@ -35,9 +39,35 @@ section {
   display: flex;
   justify-content: end;
 }
+@media screen and (min-width: 870px) {
+  .header .list {
+    gap: 33px;
+  }
+}
+.header a {
+  color: #000000;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 100%;
+  text-align: right;
+  padding: 27px 0;
+}
 
 .hi {
   text-align: center;
+}
+@media screen and (min-width: 870px) {
+  .hi .container {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 870px) {
+  .hi .reverse {
+    width: 497px;
+    margin-right: 110px;
+  }
 }
 .hi .title {
   margin-top: 34px;
@@ -46,9 +76,20 @@ section {
   line-height: 40px;
   width: 312px;
 }
+@media screen and (min-width: 870px) {
+  .hi .title {
+    text-align: start;
+    width: 506px;
+  }
+}
 .hi .text {
   margin-top: 21px;
   font-size: 16px;
+}
+@media screen and (min-width: 870px) {
+  .hi .text {
+    text-align: start;
+  }
 }
 .hi .button {
   margin-top: 27px;
@@ -60,6 +101,11 @@ section {
   font-weight: 500;
   font-size: 20px;
 }
+@media screen and (min-width: 870px) {
+  .hi {
+    text-align: start;
+  }
+}
 
 .posts {
   background-color: #EDF7FA;
@@ -68,8 +114,16 @@ section {
   background-color: #fff;
   padding: 19px;
 }
-.posts .item:not(:last-child) {
-  margin-bottom: 17px;
+@media screen and (max-width: 869px) {
+  .posts .item:not(:last-child) {
+    margin-bottom: 17px;
+  }
+}
+@media screen and (min-width: 870px) {
+  .posts .item {
+    text-align: start;
+    width: 374px;
+  }
 }
 .posts .sec-title {
   font-size: 18px;
@@ -79,9 +133,21 @@ section {
   text-align: center;
   margin-bottom: 12px;
 }
+@media screen and (min-width: 870px) {
+  .posts .sec-title {
+    text-align: start;
+  }
+}
+@media screen and (min-width: 870px) {
+  .posts .list {
+    display: flex;
+    justify-content: space-between;
+  }
+}
 @media screen and (max-width: 869px) {
   .posts .link {
     display: none;
+    color: #00A8CC;
   }
 }
 .posts .title {
@@ -98,6 +164,11 @@ section {
   border-width: 1px;
   color: black;
 }
+.posts .recent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
 .date {
   display: flex;
@@ -108,6 +179,32 @@ section {
 @media screen and (max-width: 869px) {
   .works .item:not(:first-child) {
     display: none;
+  }
+}
+@media screen and (min-width: 870px) {
+  .works .item:not(:first-child) {
+    margin-top: 46px;
+  }
+}
+@media screen and (min-width: 870px) {
+  .works .item {
+    display: flex;
+  }
+}
+.works img {
+  margin-right: 18px;
+}
+.works .sec-title {
+  font-size: 18px;
+  line-height: 60px;
+  vertical-align: bottom;
+  font-weight: inherit;
+  text-align: center;
+  margin-bottom: 12px;
+}
+@media screen and (min-width: 870px) {
+  .works .sec-title {
+    text-align: start;
   }
 }
 .works .title {
@@ -130,4 +227,18 @@ section {
   font-size: 16px;
   line-height: 100%;
   letter-spacing: 0px;
+}
+
+.footer .icon {
+  fill: #21243D;
+  height: 30px;
+}
+.footer .social {
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+  margin-bottom: 54px;
+}
+.footer .text {
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */

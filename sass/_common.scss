@@ -13,7 +13,7 @@ ul,p,h1,h2,h3{
     padding: 0;
 }
 
-ul{
+ul, a{
     text-decoration: none;
     list-style: none;
 }
@@ -24,7 +24,9 @@ ul{
     width: 375px;
     padding-left: 15px;
     padding-right: 15px;
-    outline: solid 2px red;
+    @media screen and (min-width: 870px){
+        width: 870px;
+    }
 }
 
 section{

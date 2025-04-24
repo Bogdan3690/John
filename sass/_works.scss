@@ -5,7 +5,29 @@
             @media screen and (max-width: 869px){
                 display: none;
             }
+            @media screen and (min-width: 870px){
+                margin-top: 46px;
+            }
         }
+        @media screen and (min-width: 870px){
+            display: flex;
+        }
+    }
+
+    img{
+    margin-right: 18px;
+}
+
+    .sec-title{
+    font-size: 18px;
+    line-height: 60px;
+    vertical-align: bottom;
+    font-weight: inherit;
+    text-align: center;
+    margin-bottom: 12px;
+@media screen and (min-width: 870px) {
+    text-align: start;
+}
     }
 
     .title{

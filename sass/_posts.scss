@@ -5,8 +5,16 @@
     .item{
     background-color: #fff;
     padding: 19px;
+    
+    @media screen and (max-width: 869px) {
     &:not(:last-child){
         margin-bottom: 17px;
+    }
+    }
+
+    @media screen and (min-width: 870px) {
+        text-align: start;
+        width: 374px;
     }
 }
 
@@ -17,11 +25,22 @@
         font-weight: inherit;
         text-align: center;
         margin-bottom: 12px;
+    @media screen and (min-width: 870px) {
+        text-align: start;
+    }
         }
         
+        .list{
+    @media screen and (min-width: 870px) {
+        display: flex;
+        justify-content: space-between;
+    }
+        }
+
     .link{
             @media screen and (max-width: 869px){
                 display: none;
+                color: #00A8CC;
             }
         }
         
@@ -40,6 +59,12 @@
         height: 21px;
         border-width: 1px;
         color: black;
+    }
+
+    .recent{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 }
 
