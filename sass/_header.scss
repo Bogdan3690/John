@@ -2,9 +2,10 @@
  .list{
     display: flex;
     justify-content: end;
-    @media screen and (min-width: 870px){
-        gap: 33px;
-    }
+    gap: 33px;
+    @media screen and (min-width: 852px) {
+        display: none;
+      }
 }
 
 a{

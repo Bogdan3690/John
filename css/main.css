@@ -38,10 +38,11 @@ section {
 .header .list {
   display: flex;
   justify-content: end;
+  gap: 33px;
 }
-@media screen and (min-width: 870px) {
+@media screen and (min-width: 852px) {
   .header .list {
-    gap: 33px;
+    display: none;
   }
 }
 .header a {
