@@ -35,15 +35,17 @@ section {
   padding: 50px 0;
 }
 
+.header {
+  position: relative;
+  position: fixed;
+  background-color: rgba(199, 199, 199, 0.673);
+  width: 100%;
+  height: 30px;
+}
 .header .list {
   display: flex;
   justify-content: end;
   gap: 33px;
-}
-@media screen and (min-width: 852px) {
-  .header .list {
-    display: none;
-  }
 }
 .header a {
   color: #000000;
@@ -52,6 +54,56 @@ section {
   line-height: 100%;
   text-align: right;
   padding: 27px 0;
+}
+
+.menu-button {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  z-index: 2;
+  border: none;
+}
+@media screen and (min-width: 810px) {
+  .menu-button {
+    display: none;
+  }
+}
+
+.menu-button.is-open .icon-open {
+  display: none;
+}
+
+.menu-button .icon-open {
+  display: block;
+}
+
+.menu-button.is-open .icon-close {
+  display: block;
+}
+
+.menu-button .icon-close {
+  display: none;
+}
+
+@media screen and (max-width: 810px) {
+  .menu {
+    display: none;
+  }
+}
+.menu.is-open {
+  display: flex;
+}
+@media screen and (max-width: 810px) {
+  .menu {
+    position: absolute;
+    background-color: rgb(195, 195, 195);
+    box-shadow: 0 0 1000px 100px rgb(171, 171, 171), 10px 10px 50px 50px rgb(0, 0, 0);
+    border-radius: 40px;
+    width: 480px;
+    height: 500px;
+    padding: 48px;
+    display: none;
+  }
 }
 
 .hi {
